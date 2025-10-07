@@ -4,7 +4,7 @@
 - **Name:** Robert Shema Gwiza
 - **Student ID:** 27949
 - **Course:** PL/SQL Language
-- **Database:** Oracle 21c
+- **Database:** Oracle 23ai
 - **Operating System:** Windows 10
 
 ---
@@ -30,14 +30,14 @@ I configured and accessed Oracle Enterprise Manager (OEM) Database Express to pr
 - **Main PDB:** `ro_pdb_27949`
 - **Temporary PDB:** `ro_to_delete_pdb_27949`
 - **Username:** `robert_plsqlauca_27949`
-- **Password:** `Auca@1234`
+- **Password:** `Auca`
 
 ### Commands Used
 
 #### Task 1: Create Main PDB
 ```sql
 CREATE PLUGGABLE DATABASE ro_pdb_27949
-ADMIN USER robert_plsqlauca_27949 IDENTIFIED BY "Auca@1234"
+ADMIN USER robert_plsqlauca_27949 IDENTIFIED BY "Auca"
 FILE_NAME_CONVERT=('pdbseed','ro_pdb_27949');
 
 ALTER PLUGGABLE DATABASE ro_pdb_27949 OPEN;
